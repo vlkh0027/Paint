@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00838F"
+    android:weightSum="3"
+    android:orientation="vertical"
+    tools:context="com.example.mouse.task.MainActivity">
+    <FrameLayout
+        android:id="@+id/layout_img_view"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_back_chosen"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/back"
+                    app:backgroundTint="@color/colorDeepSkyBlue"
+                    app:borderWidth="0dp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_color_chosen"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="70dp"
+                    android:src="@drawable/handwriting"
+                    app:backgroundTint="@color/colorDarkSeaGreen" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_locate_chosen"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/hand"
+                    app:backgroundTint="@color/colorDarkSeaGreen" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_image_open"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="65dp"
+                    android:layout_marginLeft="60dp"
+                    android:src="@drawable/folder"
+                    app:backgroundTint="@color/colorDarkSeaGreen" />
+            </android.support.design.widget.CoordinatorLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:visibility="invisible"
+            android:id="@+id/layoutMenuRight"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:background="@drawable/background_circle">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background_circle">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/color1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/red_circle">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/color2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/color3"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/pink_circle"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/color3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/blue_circle"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/color4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/color3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/green_circle"></RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/color5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="55dp"
+                android:layout_alignLeft="@id/color4"
+                android:background="@drawable/orange_circle"
+                android:layout_below="@+id/color4"
+                ></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/colo6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@id/color5"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/black_circle"></RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/color7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/yellow_circle"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/color8"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@id/color7"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/violet_circle"></RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
